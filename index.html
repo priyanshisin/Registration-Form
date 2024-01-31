@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- <link rel="stylesheet" href="css/form2style.css">  -->
+    <style>
+        body {
+            background-color: rgb(219, 163, 172);
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            margin: 15px 30px;
+        }
+        form {
+            display:inline-block;
+            width: 50%;
+            border:1px solid rgb(219, 163, 172);
+            font-size: large;
+            padding: 10px;
+            background-color:white;
+        }
+        h1{
+            color: rgb(161, 26, 116);
+        }
+        input[type="submit"]{
+            outline-width: 1px;
+            outline-style: auto;
+            padding: 10px;
+            border-width: 1px;
+            background-color: rgb(219, 163, 172);
+            font-size: large;
+            color: rgb(161, 26, 116);
+            cursor:grab;
+        }
+        input[type="submit"]:hover {
+            background-color: palevioletred;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="text"],
+        input[type="number"],
+        input[type="password"] {
+            width:60%;
+            background-color: white;
+            border-style:solid;
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-color:rgb(161, 26, 116);
+            padding: 10px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+    <h1>Registration Form</h1>
+    <div class="new">
+        <label>Name :</label>&nbsp;<input type="text" name="name" id="name" placeholder="your name" required><br><br>
+        <label>Email : </label>&nbsp;<input type="email" name="email" id="email" placeholder="www.example.com"required><br><br>
+        <label>Country : </label>&nbsp;<input type="text" name="country" id="country" placeholder=" your country name" required><br><br>
+        <label>Phone No. </label>&nbsp;<input type="number" name="number" id="number" placeholder="8373XXXXXX" required><br><br>
+        <label>Create Password: </label>&nbsp;<input type="password" name="password" id="password" placeholder="********"required><br><br>
+        <input type="checkbox" value="terms & conditions" required>I accept terms & conditions<br><br>
+        <!--<button> </button> -->
+        <input type="submit" value="Create Account"><br><br>
+        Already have an account ? <a href="#" target="_blank">Login</a><br><br><br>
+    </div>
+    </form>
+</body>
+</html>
